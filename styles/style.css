@@ -9,11 +9,11 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("images/background.webp") 100% 100% no-repeat;
+  background: url("../images/background.webp") 100% 100% no-repeat;
   background-size: cover;
 }
 
@@ -45,8 +45,7 @@ p {
 }
 
 a {
-  color: #4e7db0;
-  text-decoration: none;
+  color: #fff;
 }
 
 a:hover {
@@ -54,8 +53,6 @@ a:hover {
 }
 
 .msg {
-  border: 2px solid #ffa908;
-  border-radius: 3px;
   padding: 10px;
   text-align: center;
   font-weight: bold;

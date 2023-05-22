@@ -2,7 +2,7 @@
 session_start();
 
 if(isset($_SESSION['user'])) {
-    header('Location: profile.php');
+    header('Location: assets/profile.php');
 }
 ?>
 
@@ -14,18 +14,18 @@ if(isset($_SESSION['user'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Authorization page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="favicon.png">
 </head>
 <body>
 <form action="assets/signin.php" method="POST">
-    <label for="login">Логин: </label>
-    <input type="text" id="login" name="login" placeholder="Enter login">
+    <label for="username">Юзернейм: </label>
+    <input type="text" id="username" name="username" placeholder="Enter username">
     <label for="pass">Пароль: </label>
     <input type="password" id="pass" name="password" placeholder="Enter password">
     <button type="submit">Вход</button>
     <p>
-        Ещё нет аккаунта? - <a href="register.php">Регистрация</a>
+        Ещё нет аккаунта? - <a href="assets/register.php">Регистрация</a>
     </p>
     <?php
     if (isset($_SESSION['message'])) {
