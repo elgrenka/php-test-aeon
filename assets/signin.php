@@ -22,6 +22,6 @@ if (mysqli_num_rows($check_user) > 0) {
     header('Location: profile.php');
 
 } else {
-    $_SESSION['message'] = 'Юзернейм или пароль не верны';
+    $_SESSION['message'] = 'Юзернейм или пароль не верен';
     header('Location: ../index.php');
 }

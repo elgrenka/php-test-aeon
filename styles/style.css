@@ -70,15 +70,15 @@ img {
 }
 
 .logout {
-  color: #b7625c;
+  color: #c75d11;
 }
 
-.error {
-  border-bottom: 2px solid #ff4332;
-}
+/*.error {*/
+/*  border-bottom: 2px solid #ff4332;*/
+/*}*/
 
-.none {
-  display: none;
-}
+/*.none {*/
+/*  display: none;*/
+/*}*/
 
 

@@ -3,7 +3,7 @@ session_start();
 require_once 'connection.php';
 
 $name = $_POST['name'];
-//$photo = $_POST['photo'];
+$photo = $_POST['photo'];
 $birthday = $_POST['birthday'];
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -21,8 +21,8 @@ if ($password === $password_confirm) {
 
     $password = sha1($password);
     $query = "
-        INSERT INTO `users` (`id`, `username`, `password_hash`, `name`, `birthday`)
-        VALUES (NULL, '$username', '$password', '$name', '$birthday');
+        INSERT INTO `users` (`id`, `username`, `password_hash`, `name`, `photo`, `birthday`)
+        VALUES (NULL, '$username', '$password', '$name', '$path', '$birthday');
     ";
 
     mysqli_query($connect, $query);
