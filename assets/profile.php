@@ -21,8 +21,6 @@ if(!isset($_SESSION['user'])) {
     <img src="../<?= $_SESSION['user']['photo']; ?>" alt="photo">
     <h2><?= $_SESSION['user']['name']; ?></h2>
     <div><?= $_SESSION['user']['birthday']; ?></div>
-<!--    <div>--><?php //= $_SESSION['user']['id']; ?><!--</div>-->
-<!--    <div>--><?php //print_r($_SESSION['user']); ?><!--</div>-->
     <a href="../assets/logout.php" class="logout">Выход</a>
 </main>
 </body>
