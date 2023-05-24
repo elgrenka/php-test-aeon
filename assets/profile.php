@@ -18,11 +18,20 @@ if(!isset($_SESSION['user'])) {
 </head>
 <body>
 <main class="main">
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Авторизация прошла успешно</p>
+        </div>
+    </div>
+
     <img src="../<?= $_SESSION['user']['photo']; ?>" alt="photo">
     <h2><?= $_SESSION['user']['name']; ?></h2>
     <div><?= $_SESSION['user']['birthday']; ?></div>
     <a href="../assets/logout.php" class="logout">Выход</a>
 </main>
+
+<script src="../script.js"></script>
 </body>
 </html>
 

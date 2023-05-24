@@ -34,6 +34,8 @@ if(isset($_SESSION['user'])) {
     unset($_SESSION['message']);
     ?>
 </form>
+
+<!--<script src="script.js"></script>-->
 </body>
 </html>
 
