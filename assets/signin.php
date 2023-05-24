@@ -7,6 +7,8 @@ $password = sha1($_POST['password']);
 $query = "SELECT * FROM users WHERE username = '$username' AND password_hash = '$password'";
 global $connect;
 
+$delay_seconds = 3;
+
 $check_user = mysqli_query($connect, $query);
 
 if (mysqli_num_rows($check_user) > 0) {
@@ -22,6 +24,10 @@ if (mysqli_num_rows($check_user) > 0) {
     header('Location: profile.php');
 
 } else {
+    sleep($delay_seconds);
+
     $_SESSION['message'] = 'Юзернейм или пароль не верен';
     header('Location: ../index.php');
 }
+
+

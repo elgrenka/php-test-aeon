@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION['user'])) {
+if (isset($_SESSION['user'])) {
     header('Location: assets/profile.php');
 }
 ?>
@@ -35,7 +35,6 @@ if(isset($_SESSION['user'])) {
     ?>
 </form>
 
-<!--<script src="script.js"></script>-->
 </body>
 </html>
 
